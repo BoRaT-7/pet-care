@@ -1,7 +1,6 @@
 export default function About() {
   return (
     <div className="bg-base-100">
-
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 text-center">
         <div className="max-w-4xl mx-auto px-4">
@@ -15,11 +14,9 @@ export default function About() {
           </p>
         </div>
       </section>
-
       {/* Mission & Vision */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-
           <div className="bg-base-200 p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-bold text-primary mb-4">
               🎯 Our Mission
@@ -31,7 +28,6 @@ export default function About() {
               everything they need for their furry friends.
             </p>
           </div>
-
           <div className="bg-base-200 p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-bold text-primary mb-4">
               🌟 Our Vision
@@ -42,19 +38,15 @@ export default function About() {
               PetCare strives to become a leading pet service platform.
             </p>
           </div>
-
         </div>
       </section>
-
       {/* Why Choose Us */}
       <section className="py-16 bg-base-200">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-primary mb-12">
             ❤️ Why Choose Us?
           </h2>
-
           <div className="grid md:grid-cols-3 gap-8">
-
             <div className="bg-base-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
               <h3 className="text-xl font-semibold mb-3">
                 🐶 Expert Team
@@ -64,7 +56,6 @@ export default function About() {
                 care and safety for your pets.
               </p>
             </div>
-
             <div className="bg-base-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
               <h3 className="text-xl font-semibold mb-3">
                 🏥 Complete Services
@@ -74,7 +65,6 @@ export default function About() {
                 we offer everything in one place.
               </p>
             </div>
-
             <div className="bg-base-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
               <h3 className="text-xl font-semibold mb-3">
                 ⭐ Trusted & Reliable
@@ -84,11 +74,9 @@ export default function About() {
                 for reliable and loving pet services.
               </p>
             </div>
-
           </div>
         </div>
       </section>
-
       {/* Call To Action */}
       <section className="py-20 text-center">
         <h2 className="text-3xl font-bold text-primary mb-6">

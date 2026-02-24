@@ -8,7 +8,8 @@ import petfood1 from "../../assets/petfood/petfood.jpg";
 import petfood2 from "../../assets/petfood/petfood2.jpg";
 import sideCat from "../../assets/side cat.jpg";
 import adoptionImg from "../../assets/jscreativelab-simba-8618301_1920.jpg";
-
+import Reviews from "./Reviews";
+import Footer from "./Footer";
 const stats = [
   {
     id: 1,
@@ -81,55 +82,64 @@ const Home = () => {
       </section>
 
       {/* ================= ADOPTION SECTION ================= */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            🐾 Available for Adoption
-          </h2>
+     <section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+      🐾 Available for Adoption
+    </h2>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div
-                key={item}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 hover:-translate-y-2"
-              >
-                <img
-                  src={adoptionImg}
-                  alt="Pet"
-                  className="h-56 w-full object-cover"
-                />
+    {/* New Paragraph Added */}
+    <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      Give a loving home to pets who are waiting for care and affection. 
+      Browse our available pets and find your perfect companion today. 
+      Every adoption saves a life and brings endless joy to your family.
+    </p>
 
-                <div className="p-5">
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    Simba
-                  </h3>
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {[1, 2, 3, 4, 5, 6].map((item) => (
+        <div
+          key={item}
+          className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+        >
+          <img
+            src={adoptionImg}
+            alt="Pet"
+            className="h-56 w-full object-cover"
+          />
 
-                  <p className="text-sm text-gray-500 flex items-center gap-2 mt-1">
-                    <FaMapMarkerAlt className="text-pink-500" />
-                    Dhaka, Bangladesh
-                  </p>
+          <div className="p-5">
+            <h3 className="text-xl font-semibold text-gray-800">
+              Simba
+            </h3>
 
-                  <p className="text-sm text-gray-600 mt-3">
-                    Friendly and playful pet looking for a loving home.
-                  </p>
+            <p className="text-sm text-gray-500 flex items-center gap-2 mt-1">
+              <FaMapMarkerAlt className="text-pink-500" />
+              Dhaka, Bangladesh
+            </p>
 
-                  <button className="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition duration-300">
-                    Adopt Now 🐾
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+            <p className="text-sm text-gray-600 mt-3">
+              Friendly and playful pet looking for a loving home.
+            </p>
 
-          <div className="text-center mt-12">
-            <Link to="/adoption">
-              <button className="px-8 py-3 btn btn-primary rounded-full shadow-lg hover:scale-105 transition duration-300">
-                See All Adoption →
-              </button>
-            </Link>
+           <Link to="/adopt-form">
+            <button className="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition duration-300">
+              Adopt Now 🐾
+            </button>
+          </Link>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <div className="text-center mt-12">
+      <Link to="/adoption">
+        <button className="px-8 py-3 btn btn-primary rounded-full shadow-lg hover:scale-105 transition duration-300">
+          See All Adoption →
+        </button>
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* ================= PET FOOD SECTION ================= */}
       <section className="py-16 bg-white">
@@ -251,6 +261,9 @@ const Home = () => {
 
       </div>
     </section>
+
+   <Reviews />
+   
     </>
   );
 };
